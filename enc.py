@@ -10,7 +10,7 @@ def transcribe_file(filename):
     transcript_filename = os.path.splitext(filename)[0] + '.txt'
     audio_file = AudioSegment.from_file(filename)
 
-    chunk_size = 5 * 60 * 1000
+    chunk_size = 2 * 60 * 1000
 
     with open(transcript_filename, "w") as transcript:
         result = ''
